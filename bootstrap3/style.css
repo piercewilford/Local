@@ -1,0 +1,257 @@
+/*
+Theme Name: BootstrapWP
+Theme URI: http://bootstrapwp.rachelbaker.me
+Author: Rachel Baker
+Author URI: http://www.rachelbaker.me
+Description: A semantic HTML/CSS framework base theme for WordPress Developers ported from Twitter Bootstrap
+Version: 1.0
+=======
+License: GNU General Public License
+License URI: license.txt
+
+This theme, like WordPress, is licensed under the GPL.
+
+The development of BootstrapWP was powered by Sublime Text 2 and lots of Diet Coke.
+Use this starter theme to make something cool.  Please share the results with me via Twitter @rachelbaker.
+Enjoy!
+
+*/
+/********************************************************
+
+Comfortable with LESS?  Check out the /assets/css/less folder where the bootstrapwp.less file is the master complier
+
+Not comfortable with LESS?  You can override the compiled bootstrapwp.css file by adding custom styles here.
+-------------------------------------------------- */
+/* Custom container */
+.container-fixed {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.container-fixed > hr {
+  margin: 30px 0;
+}
+.row{
+    padding: 0 15px;
+}
+#login-nav input { margin-bottom: 15px; }
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    line-height: 51px;
+    font-size: 46px;
+    text-transform: uppercase;
+    margin: 0 0 23px 0;     
+    }   
+h2 {
+    font-family: 'Droid Serif', serif;
+    font-weight: 700;
+    font-style: italic;     
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0 0 23px 0;         
+    }   
+p {
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+    line-height: 23px;  
+    margin: 0 0 23px 0; 
+    }   
+
+.navbar-inverse{
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+border-color:transparent;
+z-index:150;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color:#333366;
+}
+.navbar-brand{
+    max-width:450px;
+    position:absolute;
+    margin-top:-10px;
+}
+.navbar-nav{
+    float:right;
+    margin-top:8px;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+background-color:white;
+color:#333366;
+    }
+
+.navbar-nav .dropdown:hover > .dropdown-menu { 
+  display: block; 
+}
+.navbar-nav .dropdown:hover > a[data-toggle=collapse] + .dropdown-menu { 
+  display: none;
+}
+.navbar-nav .dropdown.open > a[data-toggle=collapse] + .dropdown-menu { 
+  display: block; 
+}
+
+.body{
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.dropdown-menu>li>a:hover {
+    background-color:#333366 ;
+    color:black ;
+}
+.dropdown-menu {
+    border-radius:10px;
+}
+.navbar>.container .navbar-brand {
+    margin-left:-95px;
+}
+.container-nav{
+    height:70px;
+}
+.carousel-caption {
+    left: 20%;
+right: 20%;
+position: absolute;
+left: 15%;
+right: 15%;
+bottom: 20px;
+z-index: 10;
+padding-top: 20px;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0,0,0,.6);
+padding-bottom:0px;
+font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+h2 {
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#myCarousel {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 30px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+margin-top:-70px;
+z-index:-100;
+}
+.color{
+background-color:white;
+opacity:.4;
+height:70px;
+margin-top:-70px;
+position:fixed;
+width:100%;
+}
+.navbar {
+    background-color:transparent;
+    /*height:70px;*/
+}
+.navbar-nav>li>a {
+ color: transparent;
+    display: block;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 0px #000;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-nav:hover>li>a {
+ text-shadow: 0px 0px 0px #000;
+ background-color:transparent;
+}
+.navbar-nav li a:hover{
+    background-color:transparent ;
+     color:black;
+    text-shadow: 0px 0px 1px #000;
+    padding-left: 12px;
+}
+.nav>li>a {
+    padding:10px 10px ;
+}
+.card{
+    height:300px;
+    margin:15px;
+    -webkit-box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.75);
+background-color:#fff;
+}
+.card-heading {
+    padding-top:5%;
+    padding-bottom:3%;
+    background-color:#fff;
+    border-bottom-color: #cccccc;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+color:#737373;
+}
+.card-body {
+    height:90%;
+    background-color:#fff;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding-top:3%;
+}
+.card-container{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+body {
+    background-image:url('http://localhost:8888/ofa/wp-content/themes/options-childtheme/assets/img/brushed.png');
+}
+.homemargin{
+    margin-top:20px;
+}
+.navbar-nav {
+    float:right ;
+    width:75% ;
+}
